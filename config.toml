@@ -1,0 +1,22 @@
+baseURL = "https://wearelumenai.github.io/"
+languageCode = "en-us"
+title = "The lady of the lake"
+theme = "kube"
+
+[params]
+author = "LumenAI"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    pre = "<i class='fas fa-rss-square'></i>"
+    url = "/blog/"
+    weight = -110
+
+  [[menu.main]]
+    name = "Documentation"
+    pre = "<i class='fa fa-info-circle'></i>"
+    url = "/docs/"
+    weight = -100

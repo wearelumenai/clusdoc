@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Documentation on The lady of the lake</title>
+    <link>https://wearelumenai.github.io/docs/</link>
+    <description>Recent content in Documentation on The lady of the lake</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Dec 2019 21:33:04 +0100</lastBuildDate>
+    
+	<atom:link href="https://wearelumenai.github.io/docs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://wearelumenai.github.io/docs/getting-started/</link>
+      <pubDate>Fri, 29 Nov 2019 20:32:00 +0100</pubDate>
+      
+      <guid>https://wearelumenai.github.io/docs/getting-started/</guid>
+      <description>Introduction The lady of the lake are machine learning tools dedicated to visualize and analyze alive data.
+ Wait, what ? Alive data ???
+ In LumenAI, we consider data, such as part of our environment, has their own live, above and beyond our understanding of the world.
+Instead of being outdated data-analyst by working only on static models, in addition, we want to be up-to-date data-partners, in asking dynamic and continuous questions, in order to improve our data-understanding, and so, during all data lifecycle.</description>
+    </item>
+    
+  </channel>
+</rss>

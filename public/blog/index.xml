@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on The lady of the lake</title>
+    <link>https://wearelumenai.github.io/blog/</link>
+    <description>Recent content in Blogs on The lady of the lake</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 29 Nov 2019 21:43:19 +0100</lastBuildDate>
+    
+	<atom:link href="https://wearelumenai.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Things are getting real</title>
+      <link>https://wearelumenai.github.io/blog/things-are-getting-real/</link>
+      <pubDate>Fri, 29 Nov 2019 21:43:19 +0100</pubDate>
+      
+      <guid>https://wearelumenai.github.io/blog/things-are-getting-real/</guid>
+      <description>Hello there! After spending many months in our heads, Datapio finally came out into existence.
+Though it is in very early stage, the team is assembling and development has started!
+We sincerely hope to bring you a minimal viable product in the next few months.
+In the mean time, watch closely what&#39;s happening on our Github and feel free to contribute.</description>
+    </item>
+    
+  </channel>
+</rss>

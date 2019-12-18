@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Examples on The lady of the lake</title>
+    <link>https://wearelumenai.github.io/docs/examples/</link>
+    <description>Recent content in Examples on The lady of the lake</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 03 Dec 2019 21:43:35 +0100</lastBuildDate>
+    
+	<atom:link href="https://wearelumenai.github.io/docs/examples/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Simple Application</title>
+      <link>https://wearelumenai.github.io/docs/examples/simple-app/</link>
+      <pubDate>Wed, 04 Dec 2019 11:29:49 +0100</pubDate>
+      
+      <guid>https://wearelumenai.github.io/docs/examples/simple-app/</guid>
+      <description>datapio.yml --- environments: production: branch: master preproduction: branch: dev artifacts: - name: simple-app type: docker path: sources/simple-app params: dockerfile: docker/Dockerfile build-args: BASE_IMAGE: nginx:alpine - name: simple-app type: helm path: charts/simple-app requires: - name: simple-app type: docker params: set: some_const: &amp;quot;this is a constant&amp;quot; some_option: ${{ config.SOME_OPTION }} # injected from Consul some_secret: ${{ secrets.SOME_SECRET }} # injected from Vault </description>
+    </item>
+    
+    <item>
+      <title>Simple Micro-Service</title>
+      <link>https://wearelumenai.github.io/docs/examples/simple-microservice/</link>
+      <pubDate>Wed, 04 Dec 2019 11:30:01 +0100</pubDate>
+      
+      <guid>https://wearelumenai.github.io/docs/examples/simple-microservice/</guid>
+      <description>Business code module.exports = { initialize: async () =&amp;gt; { const state = {} // ...  return state }, terminate: async (state) =&amp;gt; { // ...  }, resolvers: async (state) =&amp;gt; ({ Query: { books: async (parent, args, context, info) =&amp;gt; { return await context.prisma.books(info) } }, Mutation: { addBook: async (parent, { author, title }, context, info) =&amp;gt; { return await context.prisma.createBook({ author, title }, info) } } }), directives: async (state) =&amp;gt; ({ authenticated: async (next, source, args, context) =&amp;gt; { // .</description>
+    </item>
+    
+    <item>
+      <title>Simple Engine</title>
+      <link>https://wearelumenai.github.io/docs/examples/simple-engine/</link>
+      <pubDate>Wed, 04 Dec 2019 11:30:05 +0100</pubDate>
+      
+      <guid>https://wearelumenai.github.io/docs/examples/simple-engine/</guid>
+      <description>Business code module.exports = { initialize: async () =&amp;gt; { const state = {} // ...  return state }, terminate: async (state) =&amp;gt; { // ...  }, handle_message: async (state, message) =&amp;gt; { const result = {} // ...  return result } } Kubernetes Resource --- apiVersion: datap.io/v1 kind: Engine metadata: name: simple-engine spec: package: simple-engine listen: - datapio.incomming emit: datapio.engines.simple </description>
+    </item>
+    
+  </channel>
+</rss>
