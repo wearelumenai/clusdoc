@@ -1,0 +1,11 @@
+version: '3'
+services:
+  tlotl-website:
+    build:
+      context: ../
+      dockerfile: ./build/Dockerfile
+    image: tlotl-website:latest
+    ports:
+      - "1313:1313"
+    volumes:
+      - "../:/website/"

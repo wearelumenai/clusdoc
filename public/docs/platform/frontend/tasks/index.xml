@@ -1,31 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tasks on The lady of the lake</title>
-    <link>https://wearelumenai.github.io/docs/platform/frontend/tasks/</link>
+    <link>http://localhost:1313/docs/platform/frontend/tasks/</link>
     <description>Recent content in Tasks on The lady of the lake</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 04 Dec 2019 11:18:15 +0100</lastBuildDate>
     
-	<atom:link href="https://wearelumenai.github.io/docs/platform/frontend/tasks/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/docs/platform/frontend/tasks/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Home</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/tasks/home/</link>
+      <link>http://localhost:1313/docs/platform/frontend/tasks/home/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:11 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/tasks/home/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/tasks/home/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bubbles</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/tasks/bubbles/</link>
+      <link>http://localhost:1313/docs/platform/frontend/tasks/bubbles/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:11 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/tasks/bubbles/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/tasks/bubbles/</guid>
       <description></description>
     </item>
     

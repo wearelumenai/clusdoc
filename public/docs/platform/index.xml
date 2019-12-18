@@ -1,22 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Platform on The lady of the lake</title>
-    <link>https://wearelumenai.github.io/docs/platform/</link>
+    <link>http://localhost:1313/docs/platform/</link>
     <description>Recent content in Platform on The lady of the lake</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Dec 2019 21:43:35 +0100</lastBuildDate>
     
-	<atom:link href="https://wearelumenai.github.io/docs/platform/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/docs/platform/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Authentication</title>
-      <link>https://wearelumenai.github.io/docs/platform/auth/</link>
+      <link>http://localhost:1313/docs/platform/auth/</link>
       <pubDate>Fri, 29 Nov 2019 20:32:00 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/auth/</guid>
+      <guid>http://localhost:1313/docs/platform/auth/</guid>
       <description>We use the golang project vouche-proxy for authenticating users with standardized OpenID &amp;amp; Oauth2 providers.
 Vouch-proxy is an SSO solution for Nginx using the auth_request module.
 This service is mainly used by clustore for checking platform access rights.</description>
@@ -24,29 +24,29 @@ This service is mainly used by clustore for checking platform access rights.</de
     
     <item>
       <title>Cluserve</title>
-      <link>https://wearelumenai.github.io/docs/platform/cluserve/</link>
+      <link>http://localhost:1313/docs/platform/cluserve/</link>
       <pubDate>Tue, 03 Dec 2019 21:33:04 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/cluserve/</guid>
-      <description>Description Configuration API </description>
+      <guid>http://localhost:1313/docs/platform/cluserve/</guid>
+      <description> Description Configuration API </description>
     </item>
     
     <item>
       <title>Clustore</title>
-      <link>https://wearelumenai.github.io/docs/platform/clustore/</link>
+      <link>http://localhost:1313/docs/platform/clustore/</link>
       <pubDate>Tue, 03 Dec 2019 21:41:29 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/clustore/</guid>
-      <description>Description Configuration API </description>
+      <guid>http://localhost:1313/docs/platform/clustore/</guid>
+      <description> Description Configuration API </description>
     </item>
     
     <item>
       <title>Tracking</title>
-      <link>https://wearelumenai.github.io/docs/platform/tracking/</link>
+      <link>http://localhost:1313/docs/platform/tracking/</link>
       <pubDate>Tue, 03 Dec 2019 21:41:29 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/tracking/</guid>
-      <description>Description Configuration API </description>
+      <guid>http://localhost:1313/docs/platform/tracking/</guid>
+      <description> Description Configuration API </description>
     </item>
     
   </channel>

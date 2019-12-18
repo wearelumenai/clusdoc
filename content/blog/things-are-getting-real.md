@@ -6,10 +6,10 @@ weight = 20
 draft = false
 +++
 
-Hello there! After spending many months in our heads, Datapio finally came out into existence.
+Hello there! After spending many months in our heads, The lady of the lake finally came out into existence.
 
 Though it is in very early stage, the team is assembling and development has started!
 
 We sincerely hope to bring you a minimal viable product in the next few months.
 
-In the mean time, watch closely what's happening on our [Github](https://github.com/datapio) and feel free to contribute.
+In the mean time, watch closely what's happening on our website [Github](https://github.com/wearelumenai) and feel free to contribute.

@@ -1,40 +1,40 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>The lady of the lake</title>
-    <link>https://wearelumenai.github.io/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on The lady of the lake</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 04 Dec 2019 11:30:05 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 04 Dec 2019 11:18:15 +0100</lastBuildDate>
     
-	<atom:link href="https://wearelumenai.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Platform configuration</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/admin/conf/</link>
+      <link>http://localhost:1313/docs/platform/frontend/admin/conf/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:15 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/admin/conf/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/admin/conf/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Home</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/tasks/home/</link>
+      <link>http://localhost:1313/docs/platform/frontend/tasks/home/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:11 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/tasks/home/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/tasks/home/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Authentication</title>
-      <link>https://wearelumenai.github.io/docs/platform/auth/</link>
+      <link>http://localhost:1313/docs/platform/auth/</link>
       <pubDate>Fri, 29 Nov 2019 20:32:00 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/auth/</guid>
+      <guid>http://localhost:1313/docs/platform/auth/</guid>
       <description>We use the golang project vouche-proxy for authenticating users with standardized OpenID &amp;amp; Oauth2 providers.
 Vouch-proxy is an SSO solution for Nginx using the auth_request module.
 This service is mainly used by clustore for checking platform access rights.</description>
@@ -42,10 +42,10 @@ This service is mainly used by clustore for checking platform access rights.</de
     
     <item>
       <title>Getting Started</title>
-      <link>https://wearelumenai.github.io/docs/getting-started/</link>
+      <link>http://localhost:1313/docs/getting-started/</link>
       <pubDate>Fri, 29 Nov 2019 20:32:00 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/getting-started/</guid>
+      <guid>http://localhost:1313/docs/getting-started/</guid>
       <description>Introduction The lady of the lake are machine learning tools dedicated to visualize and analyze alive data.
  Wait, what ? Alive data ???
  In LumenAI, we consider data, such as part of our environment, has their own live, above and beyond our understanding of the world.
@@ -54,148 +54,148 @@ Instead of being outdated data-analyst by working only on static models, in addi
     
     <item>
       <title>Simple Application</title>
-      <link>https://wearelumenai.github.io/docs/examples/simple-app/</link>
+      <link>http://localhost:1313/docs/examples/simple-app/</link>
       <pubDate>Wed, 04 Dec 2019 11:29:49 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/examples/simple-app/</guid>
-      <description>datapio.yml --- environments: production: branch: master preproduction: branch: dev artifacts: - name: simple-app type: docker path: sources/simple-app params: dockerfile: docker/Dockerfile build-args: BASE_IMAGE: nginx:alpine - name: simple-app type: helm path: charts/simple-app requires: - name: simple-app type: docker params: set: some_const: &amp;quot;this is a constant&amp;quot; some_option: ${{ config.SOME_OPTION }} # injected from Consul some_secret: ${{ secrets.SOME_SECRET }} # injected from Vault </description>
+      <guid>http://localhost:1313/docs/examples/simple-app/</guid>
+      <description> datapio.yml --- environments: production: branch: master preproduction: branch: dev artifacts: - name: simple-app type: docker path: sources/simple-app params: dockerfile: docker/Dockerfile build-args: BASE_IMAGE: nginx:alpine - name: simple-app type: helm path: charts/simple-app requires: - name: simple-app type: docker params: set: some_const: &amp;quot;this is a constant&amp;quot; some_option: ${{ config.SOME_OPTION }} # injected from Consul some_secret: ${{ secrets.SOME_SECRET }} # injected from Vault  </description>
     </item>
     
     <item>
       <title>News</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/admin/news/</link>
+      <link>http://localhost:1313/docs/platform/frontend/admin/news/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:15 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/admin/news/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/admin/news/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Bubbles</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/tasks/bubbles/</link>
+      <link>http://localhost:1313/docs/platform/frontend/tasks/bubbles/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:11 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/tasks/bubbles/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/tasks/bubbles/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Account</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/account/</link>
+      <link>http://localhost:1313/docs/platform/frontend/account/</link>
       <pubDate>Tue, 03 Dec 2019 21:41:07 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/account/</guid>
-      <description>Login Account Logout </description>
+      <guid>http://localhost:1313/docs/platform/frontend/account/</guid>
+      <description> Login Account Logout </description>
     </item>
     
     <item>
       <title>Things are getting real</title>
-      <link>https://wearelumenai.github.io/blog/things-are-getting-real/</link>
+      <link>http://localhost:1313/blog/things-are-getting-real/</link>
       <pubDate>Fri, 29 Nov 2019 21:43:19 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/blog/things-are-getting-real/</guid>
+      <guid>http://localhost:1313/blog/things-are-getting-real/</guid>
       <description>Hello there! After spending many months in our heads, Datapio finally came out into existence.
 Though it is in very early stage, the team is assembling and development has started!
 We sincerely hope to bring you a minimal viable product in the next few months.
-In the mean time, watch closely what&#39;s happening on our Github and feel free to contribute.</description>
+In the mean time, watch closely what&amp;rsquo;s happening on our Github and feel free to contribute.</description>
     </item>
     
     <item>
       <title>Simple Micro-Service</title>
-      <link>https://wearelumenai.github.io/docs/examples/simple-microservice/</link>
+      <link>http://localhost:1313/docs/examples/simple-microservice/</link>
       <pubDate>Wed, 04 Dec 2019 11:30:01 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/examples/simple-microservice/</guid>
-      <description>Business code module.exports = { initialize: async () =&amp;gt; { const state = {} // ...  return state }, terminate: async (state) =&amp;gt; { // ...  }, resolvers: async (state) =&amp;gt; ({ Query: { books: async (parent, args, context, info) =&amp;gt; { return await context.prisma.books(info) } }, Mutation: { addBook: async (parent, { author, title }, context, info) =&amp;gt; { return await context.prisma.createBook({ author, title }, info) } } }), directives: async (state) =&amp;gt; ({ authenticated: async (next, source, args, context) =&amp;gt; { // .</description>
+      <guid>http://localhost:1313/docs/examples/simple-microservice/</guid>
+      <description>Business code module.exports = { initialize: async () =&amp;gt; { const state = {} // ... return state }, terminate: async (state) =&amp;gt; { // ... }, resolvers: async (state) =&amp;gt; ({ Query: { books: async (parent, args, context, info) =&amp;gt; { return await context.prisma.books(info) } }, Mutation: { addBook: async (parent, { author, title }, context, info) =&amp;gt; { return await context.prisma.createBook({ author, title }, info) } } }), directives: async (state) =&amp;gt; ({ authenticated: async (next, source, args, context) =&amp;gt; { // .</description>
     </item>
     
     <item>
       <title>Tracking</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/admin/tracking/</link>
+      <link>http://localhost:1313/docs/platform/frontend/admin/tracking/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:15 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/admin/tracking/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/admin/tracking/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Cluserve</title>
-      <link>https://wearelumenai.github.io/docs/platform/cluserve/</link>
+      <link>http://localhost:1313/docs/platform/cluserve/</link>
       <pubDate>Tue, 03 Dec 2019 21:33:04 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/cluserve/</guid>
-      <description>Description Configuration API </description>
+      <guid>http://localhost:1313/docs/platform/cluserve/</guid>
+      <description> Description Configuration API </description>
     </item>
     
     <item>
       <title>Simple Engine</title>
-      <link>https://wearelumenai.github.io/docs/examples/simple-engine/</link>
+      <link>http://localhost:1313/docs/examples/simple-engine/</link>
       <pubDate>Wed, 04 Dec 2019 11:30:05 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/examples/simple-engine/</guid>
-      <description>Business code module.exports = { initialize: async () =&amp;gt; { const state = {} // ...  return state }, terminate: async (state) =&amp;gt; { // ...  }, handle_message: async (state, message) =&amp;gt; { const result = {} // ...  return result } } Kubernetes Resource --- apiVersion: datap.io/v1 kind: Engine metadata: name: simple-engine spec: package: simple-engine listen: - datapio.incomming emit: datapio.engines.simple </description>
+      <guid>http://localhost:1313/docs/examples/simple-engine/</guid>
+      <description> Business code module.exports = { initialize: async () =&amp;gt; { const state = {} // ... return state }, terminate: async (state) =&amp;gt; { // ... }, handle_message: async (state, message) =&amp;gt; { const result = {} // ... return result } }  Kubernetes Resource --- apiVersion: datap.io/v1 kind: Engine metadata: name: simple-engine spec: package: simple-engine listen: - datapio.incomming emit: datapio.engines.simple  </description>
     </item>
     
     <item>
       <title>Benchmark</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/admin/bench/</link>
+      <link>http://localhost:1313/docs/platform/frontend/admin/bench/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:15 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/admin/bench/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/admin/bench/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Community detection</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/graph/</link>
+      <link>http://localhost:1313/docs/platform/frontend/graph/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:15 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/graph/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/graph/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Clustore</title>
-      <link>https://wearelumenai.github.io/docs/platform/clustore/</link>
+      <link>http://localhost:1313/docs/platform/clustore/</link>
       <pubDate>Tue, 03 Dec 2019 21:41:29 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/clustore/</guid>
-      <description>Description Configuration API </description>
+      <guid>http://localhost:1313/docs/platform/clustore/</guid>
+      <description> Description Configuration API </description>
     </item>
     
     <item>
       <title>Feedbacks</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/admin/feedbacks/</link>
+      <link>http://localhost:1313/docs/platform/frontend/admin/feedbacks/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:15 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/admin/feedbacks/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/admin/feedbacks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Statistics</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/stats/</link>
+      <link>http://localhost:1313/docs/platform/frontend/stats/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:15 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/stats/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/stats/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Tracking</title>
-      <link>https://wearelumenai.github.io/docs/platform/tracking/</link>
+      <link>http://localhost:1313/docs/platform/tracking/</link>
       <pubDate>Tue, 03 Dec 2019 21:41:29 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/tracking/</guid>
-      <description>Description Configuration API </description>
+      <guid>http://localhost:1313/docs/platform/tracking/</guid>
+      <description> Description Configuration API </description>
     </item>
     
     <item>
       <title>CGU</title>
-      <link>https://wearelumenai.github.io/docs/platform/frontend/cgu/</link>
+      <link>http://localhost:1313/docs/platform/frontend/cgu/</link>
       <pubDate>Wed, 04 Dec 2019 11:18:15 +0100</pubDate>
       
-      <guid>https://wearelumenai.github.io/docs/platform/frontend/cgu/</guid>
+      <guid>http://localhost:1313/docs/platform/frontend/cgu/</guid>
       <description></description>
     </item>
     

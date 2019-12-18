@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tools on The lady of the lake</title>
-    <link>https://wearelumenai.github.io/docs/tools/</link>
+    <link>http://localhost:1313/docs/tools/</link>
     <description>Recent content in Tools on The lady of the lake</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 03 Dec 2019 21:43:31 +0100</lastBuildDate>
     
-	<atom:link href="https://wearelumenai.github.io/docs/tools/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://localhost:1313/docs/tools/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
