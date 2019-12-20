@@ -9,3 +9,13 @@ services:
       - "1313:1313"
     volumes:
       - "../:/website/"
+  tlotl-website-dev:
+    build:
+      context: ../
+      dockerfile: ./build/Dockerfile
+    image: tlotl-website-dev
+    ports:
+      - "1314:1313"
+    volumes:
+      - "../:/website/"
+    command: -D
