@@ -28,11 +28,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/docs/examples/simple-app/</loc>
-    <lastmod>2019-12-04T11:29:49+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/docs/platform/frontend/admin/news/</loc>
     <lastmod>2019-12-04T11:18:15+01:00</lastmod>
   </url>
@@ -63,11 +58,6 @@
   </url>
   
   <url>
-    <loc>http://localhost:1313/docs/examples/simple-microservice/</loc>
-    <lastmod>2019-12-04T11:30:01+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://localhost:1313/docs/platform/frontend/tasks/</loc>
     <lastmod>2019-12-04T11:18:15+01:00</lastmod>
   </url>
@@ -85,11 +75,6 @@
   <url>
     <loc>http://localhost:1313/docs/platform/cluserve/</loc>
     <lastmod>2019-12-03T21:33:04+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://localhost:1313/docs/examples/simple-engine/</loc>
-    <lastmod>2019-12-04T11:30:05+01:00</lastmod>
   </url>
   
   <url>

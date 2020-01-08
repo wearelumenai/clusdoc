@@ -1,16 +1,23 @@
-all: doc
+DOCKER=docker-compose -f deployments/docker-compose.yml
+
+all: build docker-build
 
 build:
-	hugo
+	hugo ${args}
 
 doc:
-	hugo server --renderToDisk
+	hugo server --renderToDisk ${args}
 
-doc-drafts:
-	hugo server --renderToDisk -D
+doc-dev:
+	hugo server --renderToDisk -D ${args}
+
+docker-build:
+	$(DOCKER) build ${args}
 
 docker:
-	docker-compose -f deployments/docker-compose.yml up --build
+	$(DOCKER) up tlotl-website ${args}
 
-docker-drafts:
-	docker-compose -f deployments/docker-compose.dev.yml up
+docker-dev:
+	$(DOCKER) up tlotl-website-dev ${args}
+
+.PHONY: build doc doc-dev docker-build docker docker-dev

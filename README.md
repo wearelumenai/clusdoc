@@ -29,26 +29,30 @@ Generate files without drafts in the directory `public`
 make build
 ```
 
-## See documentation with drafts
+## Dev with drafts
 
 Every modification will modify the directory `public`
 
 ```bash
-make doc-drafts
+make doc-dev
 ```
 
 ## With docker
 
-Hot-reload, doc-generation in `public` and no drafts
+### production doc without drafts
+
+Expose doc at http://localhost:1380
 
 ```bash
 make docker
 ```
 
-Hot-reload, doc-generation in `public` and drafts
+### hot-reload doc-generation in `public/` with drafts
+
+Expose doc at http://localhost:1313
 
 ```bash
-make docker-drafts
+make docker-dev
 ```
 
 Enjoy

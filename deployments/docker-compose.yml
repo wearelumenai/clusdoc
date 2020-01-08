@@ -4,8 +4,20 @@ services:
     build:
       context: ../
       dockerfile: ./build/Dockerfile
-    image: tlotl-website:latest
+      target: prod
+    image: tlotl-website
+    container_name: tlotl-website
+    ports:
+      - "1380:80"
+  tlotl-website-dev:
+    build:
+      context: ../
+      dockerfile: ./build/Dockerfile
+      target: dev
+    image: tlotl-website-dev
+    container_name: tlotl-website-dev
     ports:
       - "1313:1313"
     volumes:
       - "../:/website/"
+    command: -D
