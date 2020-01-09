@@ -13,17 +13,6 @@
     
     <item>
       <title>Air Quality with Plumelabs</title>
-      <link>http://localhost:1313/docs/airquality/</link>
-      <pubDate>Thu, 19 Dec 2019 12:32:00 +0100</pubDate>
-      
-      <guid>http://localhost:1313/docs/airquality/</guid>
-      <description>Plumelabs is a french startup developing a flow to analyze air quality in your everyday environment. This flow provides real time collect of NO2 (ppb), VOC (ppb), pm 10 (ug/m3) and pm 2.5 (ug/m3). It looks like this:
-Preprocess and cleaning Files are available using the mobile app and sent by email in a zip format containing complete history of your flow, namely:
- air quality measurements in Plume AQI, ppb and ug/m3, in CSV format, GPS measurements associated with latitude / longitude data, in CSV format, Geographic data in KML format (Google Earth), and associated images in PNG format.</description>
-    </item>
-    
-    <item>
-      <title>Air Quality with Plumelabs</title>
       <link>http://localhost:1313/docs/tutorials/airquality/</link>
       <pubDate>Thu, 19 Dec 2019 12:32:00 +0100</pubDate>
       
@@ -189,6 +178,17 @@ In the mean time, watch closely what&amp;rsquo;s happening on our website Github
       
       <guid>http://localhost:1313/docs/platform/frontend/cgu/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/docs/tutorials/nlp-with-bbc-news/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/docs/tutorials/nlp-with-bbc-news/</guid>
+      <description>NLP with BBC news articles In this notebook, we use distclus4py and bubbles4py to perform batch and online analysis of a dataset of 2225 BBC news articles from http://mlg.ucd.ie/datasets/bbc.html with 5 topics (business, entertainment, politics, sport, tech) and build a javascript visualization of the results.
+We stack several steps as follows:
+ Batch training of x% of the sample:  construction of a word embedding with fasttext thanks to the articles bodies, clustering based on a batch analysis with one given algorithm (streaming, mcmc, or kmeans from distclus4py package).</description>
     </item>
     
   </channel>

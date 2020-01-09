@@ -11,5 +11,16 @@
 	<atom:link href="http://localhost:1313/docs/tutorials/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Air Quality with Plumelabs</title>
+      <link>http://localhost:1313/docs/tutorials/airquality/</link>
+      <pubDate>Thu, 19 Dec 2019 12:32:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/docs/tutorials/airquality/</guid>
+      <description>Plumelabs is a french startup developing a flow to analyze air quality in your everyday environment. This flow provides real time collect of NO2 (ppb), VOC (ppb), pm 10 (ug/m3) and pm 2.5 (ug/m3). It looks like this:
+Preprocess and cleaning Files are available using the mobile app and sent by email in a zip format containing complete history of your flow, namely:
+ air quality measurements in Plume AQI, ppb and ug/m3, in CSV format, GPS measurements associated with latitude / longitude data, in CSV format, Geographic data in KML format (Google Earth), and associated images in PNG format.</description>
+    </item>
+    
   </channel>
 </rss>
