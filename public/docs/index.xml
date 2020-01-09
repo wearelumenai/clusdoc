@@ -12,15 +12,23 @@
     
     
     <item>
+      <title>Air Quality with Plumelabs</title>
+      <link>http://localhost:1313/docs/airquality/</link>
+      <pubDate>Thu, 19 Dec 2019 12:32:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/docs/airquality/</guid>
+      <description>Plumelabs is a french startup developing a flow to analyze air quality in your everyday environment. This flow provides real time collect of NO2 (ppb), VOC (ppb), pm 10 (ug/m3) and pm 2.5 (ug/m3). It looks like this:
+Preprocess and cleaning Files are available using the mobile app and sent by email in a zip format containing complete history of your flow, namely:
+ air quality measurements in Plume AQI, ppb and ug/m3, in CSV format, GPS measurements associated with latitude / longitude data, in CSV format, Geographic data in KML format (Google Earth), and associated images in PNG format.</description>
+    </item>
+    
+    <item>
       <title>Getting Started</title>
       <link>http://localhost:1313/docs/getting-started/</link>
       <pubDate>Fri, 29 Nov 2019 20:32:00 +0100</pubDate>
       
       <guid>http://localhost:1313/docs/getting-started/</guid>
-      <description>Introduction The lady of the lake are machine learning tools dedicated to visualize and analyze alive data.
- Wait, what ? Alive data ???
- In LumenAI, we consider data, such as part of our environment, has their own live, above and beyond our understanding of the world.
-Instead of being outdated data-analyst by working only on static models, in addition, we want to be up-to-date data-partners, in asking dynamic and continuous questions, in order to improve our data-understanding, and so, during all data lifecycle.</description>
+      <description>Introduction  The Lady of the Lake is an enchantress in the Matter of Britain, the body of medieval literature and legend associated with King Arthur. She plays a pivotal role in many stories, including giving Arthur his sword Excalibur, enchanting Merlin, and raising Lancelot after the death of his father (Source Wikipedia). In what follows, The lady of the lake gives datascientists swords and tools to segment, cluster, visualize and analyze alive data.</description>
     </item>
     
   </channel>
