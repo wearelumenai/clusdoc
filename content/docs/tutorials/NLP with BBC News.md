@@ -1,3 +1,15 @@
++++
+title = "Air Quality with Plumelabs"
+description = "Batch analysis of Air Quality"
+date = 2019-12-19T12:32:00+01:00
+weight = 10
+draft = false
+bref = "Batch analysis of Air Quality"
+toc = true
++++
+
+[github]: /github-logo.png
+
 
 # NLP with BBC news articles 
 
