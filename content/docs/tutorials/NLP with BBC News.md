@@ -1,6 +1,6 @@
 +++
-title = "Air Quality with Plumelabs"
-description = "Batch analysis of Air Quality"
+title = "NLP with BBC news articles "
+description = "Batch and Online analysis of news"
 date = 2019-12-19T12:32:00+01:00
 weight = 10
 draft = false
@@ -10,8 +10,6 @@ toc = true
 
 [github]: /github-logo.png
 
-
-# NLP with BBC news articles 
 
 In this notebook, we use distclus4py and bubbles4py to perform batch and online analysis of a dataset of 2225 BBC news articles from http://mlg.ucd.ie/datasets/bbc.html with 5 topics (business, entertainment, politics, sport, tech) and build a javascript visualization of the results.
 
@@ -208,7 +206,7 @@ print(len(algo.centroids),'centers')
     6 centers
 
 
-# Vizualization of the clustering of the train set
+## Vizualization of the clustering of the train set
 
 We start a first analysis of the result. These few lines of code allow to generate a javascript visualisation of each cluster in your browser with bubbles and axes.
 We first ask the label of each trained vectors.
@@ -276,8 +274,7 @@ print('http://luzine.lumenai.fr:{}/bubbles?result_id={}'.format(port, result_id)
 
     http://luzine.lumenai.fr:44768/bubbles?result_id=arznlpfzhgdazlrpzzdrngugeraumbop
 
-
-# On the fly analysis of a test dataset
+# Part II : On the fly analysis of a test dataset
 
 We are ready to analyze the test set sequentially in order to check the evolution of the dataset. We first select the size of the test set to give to the algorithm.
 
@@ -331,7 +328,7 @@ print(len(algo.centroids),'centers at the end of the test xp')
     Wall time: 43.8 s
 
 
-# Visualization after the test experience
+## Visualization after the test experience
 
 Here we propose to vizualize the resulting clustering (train +test analysis), where the size of the clusters are associated with the number of test data.
 
