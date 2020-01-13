@@ -15,9 +15,9 @@ docker-build:
 	$(DOCKER) build ${args}
 
 docker:
-	$(DOCKER) up tlotl-website ${args}
+	$(DOCKER) up clusdoc ${args}
 
 docker-dev:
-	$(DOCKER) up tlotl-website-dev ${args}
+	$(DOCKER) up clusdoc-dev ${args}
 
 .PHONY: build doc doc-dev docker-build docker docker-dev

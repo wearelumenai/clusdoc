@@ -1,23 +1,23 @@
 version: '3.7'
 services:
-  tlotl-website:
+  clusdoc:
     build:
       context: ../
       dockerfile: ./build/Dockerfile
       target: prod
-    image: tlotl-website
-    container_name: tlotl-website
+    image: clusdoc
+    container_name: clusdoc
     ports:
       - "1380:80"
-  tlotl-website-dev:
+  clusdoc-dev:
     build:
       context: ../
       dockerfile: ./build/Dockerfile
       target: dev
-    image: tlotl-website-dev
-    container_name: tlotl-website-dev
+    image: clusdoc-dev
+    container_name: clusdoc-dev
     ports:
       - "1313:1313"
     volumes:
-      - "../:/website/"
+      - "../:/app/clusdoc/"
     command: -D

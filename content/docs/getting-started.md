@@ -62,13 +62,13 @@ This solution is based on 5 services:
 
 ## Deployment
 
-Clone the repository [tlotl](https://github.com/wearelumenai/tlotl).
+Clone the repository [clusapp](https://github.com/wearelumenai/clusapp).
 
 ```bash
-git clone https://github.com/wearelumenai/tlotl
+git clone https://github.com/wearelumenai/clusapp
 ```
 
-Then, read the [README](https://github.com/wearelumenai/tlotl/blob/master/README.md) for configuring your environment (dev, prod, distributed, etc.).
+Then, read the [README](https://github.com/wearelumenai/clusapp/blob/master/README.md) for configuring your environment (dev, prod, distributed, etc.).
 
 For example, taping
 

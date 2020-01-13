@@ -2,24 +2,24 @@ FROM gohugoio/hugo AS base
 
 FROM scratch AS dev
 
-WORKDIR /website
+WORKDIR /app/clusdoc
 
 COPY --from=base /hugo /hugo
 
-COPY ./ /website/
+COPY ./ /app/clusdoc/
 
 ENTRYPOINT ["/hugo", "server", "--renderToDisk", "--bind", "0.0.0.0"]
 
 FROM alpine AS build
 
-WORKDIR /website
+WORKDIR /app/clusdoc
 
 COPY --from=base /hugo /hugo
 
-COPY ./ /website/
+COPY ./ /app/clusdoc/
 
 RUN /hugo
 
 FROM nginx:alpine AS prod
 
-COPY --from=build /website/public /usr/share/nginx/html
+COPY --from=build /app/clusdoc/public /usr/share/nginx/html
