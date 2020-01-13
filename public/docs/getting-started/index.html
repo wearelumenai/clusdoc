@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-  <meta name="generator" content="Hugo 0.32-DEV" />
+  <meta name="generator" content="Hugo 0.40.1" />
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -166,35 +166,39 @@ headingSelector: 'h1,h2,h3,h4'
 
 
 
-<h1 id="introduction">Introduction</h1>
+<h1 id="introduction-img-style-float-right-src-tlotl-jpg-width-300">Introduction <img style="float: right;" src="/tlotl.jpg" width="300"></h1>
 
-<p><strong>The lady of the lake</strong> are machine learning tools dedicated to visualize and analyze alive data.</p>
+<p><strong>The Lady of the Lake</strong> is an enchantress in the Matter of Britain, the body of medieval literature and legend associated with King Arthur. She plays a pivotal role in many stories, including giving Arthur his sword Excalibur, enchanting Merlin, and raising Lancelot after the death of his father (Source <a href="https://en.wikipedia.org/wiki/Lady_of_the_Lake">Wikipedia</a>). In what follows, <strong>The lady of the lake</strong> gives datascientists swords and tools to segment, cluster, visualize and analyze alive data.</p>
 
 <blockquote>
 <p>Wait, what ? Alive data ???</p>
 </blockquote>
 
-<p>In LumenAI, we consider data, such as part of our environment, has their own live, above and beyond our understanding of the world.</p>
+<p>In LumenAI, we consider data, such as part of our environment, has their own live, above and beyond our understanding of the world. Instead of being outdated data-analyst by working only on static models, in addition, we want to be up-to-date data-partners, in asking dynamic and continuous questions, in order to improve our data-understanding, and so, during all data lifecycle.</p>
 
-<p>Instead of being outdated data-analyst by working only on static models, in addition, we want to be up-to-date data-partners, in asking dynamic and continuous questions, in order to improve our data-understanding, and so, during all data lifecycle.</p>
-
-<p>Therefore, in using <strong>The lady of the lake</strong>, you are going to analyze in real-time, data flow with the possibility to modify your parameters without stopping the analysis.</p>
+<p>In what follows, you are going to analyze in real-time, data flow with the possibility to modify your parameters without stopping the analysis. So, welcome to the magic of <strong>The lady of the lake</strong>.</p>
 
 <h1 id="open-source-tools">Open-source Tools</h1>
 
 <h2 id="distclus-https-github-com-wearelumenai-distclus"><a href="https://github.com/wearelumenai/distclus">distclus</a></h2>
 
-<p>Golang open-source library providing our technology-core with online clustering loop control, aiming to transform all static algorithms to online clustering algorithms, with all powerful of the online execution paradigm.</p>
+<p>Golang open-source library providing our technology-core with online clustering loop control, aiming to transform all static clustering algorithms to online clustering algorithms, with all powerful of the online execution paradigm.</p>
 
-<p>We give an example of three algorithms:
-- kmeans
-- mcmc
-- streaming</p>
+<p>We propose hic et nunc three algorithms:</p>
 
-<p>And three dimension spaces:
-- euclid
-- cosinus
-- time series</p>
+<ul>
+<li>the vanilla kmeans, where users have to fix k and can perform online clustering with a fixed number of clusters,</li>
+<li>a mcmc online learning algorithm, based on this paper: <a href="https://projecteuclid.org/euclid.ejs/1537430425">A quasi-bayesian perspective to Online Clustering</a>,</li>
+<li>a streaming algorithm,</li>
+</ul>
+
+<p>as well as three different metrics or similarities:</p>
+
+<ul>
+<li>euclidean to analyze vectors of features in the standard Euclidean space,</li>
+<li>cosinus to analyze vectors of features with the cosine similarity,</li>
+<li>dtw to analyze multivariate time series with the state-of-the-art Dynamic Time Warping (DTW) similarity.</li>
+</ul>
 
 <h2 id="distclus4py-https-github-com-wearelumenai-distclus4py"><a href="https://github.com/wearelumenai/distclus4py">distclus4py</a></h2>
 
