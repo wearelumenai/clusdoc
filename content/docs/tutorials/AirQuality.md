@@ -1,5 +1,5 @@
 +++
-title = "Air Quality with Plumelabs"
+title = "Batch analysis for Air Quality with Plumelabs"
 description = "Batch analysis of Air Quality"
 date = 2019-12-19T12:32:00+01:00
 weight = 10
@@ -7,18 +7,13 @@ draft = false
 bref = "Batch analysis of Air Quality"
 toc = true
 +++
+ 
 
-[github]: /github-logo.png
+In this notebook, we analyze a dataset coming from https://plumelabs.com/fr/ and a Flow which provides real time collect of NO2 (ppb), VOC (ppb), pm 10 (ug/m3) and pm 2.5 (ug/m3).
 
+# Preprocess and cleaning
 
-
-[Plumelabs]( https://plumelabs.com/fr/) is a french startup developing a flow to analyze air quality in your everyday environment. This flow provides real time collect of NO2 (ppb), VOC (ppb), pm 10 (ug/m3) and pm 2.5 (ug/m3). It looks like this:
-
-![Flow2](/flow.jpg)
-
-## Preprocess and cleaning
-
-Files are available using the mobile app and sent by email in a zip format containing complete history of your flow, namely:
+Files are available using the mobile app and sent by email in a zip format containing complete history of your Flow, namely:
 
 1. air quality measurements in Plume AQI, ppb and ug/m3, in CSV format,
 2. GPS measurements associated with latitude / longitude data, in CSV format,
@@ -35,8 +30,8 @@ import pandas as pd
 
 
 ```python
-contain = pd.read_csv('data/user_measures_20190217_20191212_2.csv')
-#contain = pd.read_csv('data/user_measures_20180910_20190217_1.csv')
+#contain = pd.read_csv('data/user_measures_20190217_20191212_2.csv')
+contain = pd.read_csv('data/user_measures_20180910_20190217_1.csv')
 ```
 
 
@@ -45,28 +40,26 @@ print(np.sum(contain.isnull()))
 print(contain.iloc[200:205,:5])
 ```
 
-    timestamp                 0
-    date (UTC)                0
-    NO2 (ppb)                 0
-    VOC (ppb)                 0
-    pm 10 (ug/m3)             0
-    pm 2.5 (ug/m3)          339
-    NO2 (Plume AQI)           0
-    VOC (Plume AQI)           0
-    pm 10 (Plume AQI)         0
-    pm 2.5 (Plume AQI)        0
-    pm 1 (ug/m3)              0
-    pm 1 (Plume AQI)      38320
+    timestamp               0
+    date (UTC)              0
+    NO2 (ppb)               0
+    VOC (ppb)               0
+    pm 10 (ug/m3)         253
+    pm 2.5 (ug/m3)        286
+    NO2 (Plume AQI)         0
+    VOC (Plume AQI)         0
+    pm 10 (Plume AQI)       0
+    pm 2.5 (Plume AQI)      0
     dtype: int64
           timestamp           date (UTC)  NO2 (ppb)  VOC (ppb)  pm 10 (ug/m3)
-    200  1550413401  2019-02-17 14:23:21          0        174      82.810530
-    201  1550413461  2019-02-17 14:24:21          0        177      36.271523
-    202  1550413521  2019-02-17 14:25:21          0        181      55.954240
-    203  1550413581  2019-02-17 14:26:21          0        184      26.449211
-    204  1550413641  2019-02-17 14:27:21          0        190      19.275837
+    200  1536602377  2018-09-10 17:59:37        679          8           20.0
+    201  1536602437  2018-09-10 18:00:37        676          8            1.0
+    202  1536602497  2018-09-10 18:01:37        677          4           19.0
+    203  1536602557  2018-09-10 18:02:37        679          3           16.0
+    204  1536602617  2018-09-10 18:03:37        683         51           11.0
 
 
-Unfortunately, my Plumelabs extraction have NaN values :\ We fill the NaN with zero thanks to pandas and extract only air quality measures in ppb and ug/m3 as follows:
+Plumelabs extraction have NaN values :\ We fill the NaN with zero thanks to pandas and extract only air quality measures in ppb and ug/m3 as follows:
 
 
 ```python
@@ -92,7 +85,7 @@ np.sum(data.isnull())
 data.to_csv('data/plumelabs_clean.csv',index=False,sep=",")
 ```
 
-## Batch analysis
+# Batch analysis
 
 We then give these data to our clustering algorithm: MCMC and Streaming, and analyze it in a batch mode (sklearn friendly). 
 
@@ -190,7 +183,7 @@ print(algo.centroids[0])
 
 ## MCMC algorithm
 
-We also give the data to our MCMC algorithm. Batch object allows to perform a batch clustering using MCMC algorithm. Play with parameters amp (the temperature of the Gibbs measure) in order to add centers (the hotter it is, the more centers). You can also play with the number of centers to initialize the Markov chain, the maximum number of centers, and - of course - the number of iterations. 
+We then give the data to our MCMC algorithm. Batch object allows to perform a batch clustering using MCMC algorithm. Play with parameters amp (the temperature of the Gibbs measure) in order to add centers (the hotter it is, the more centers). You can also play with the number of centers to initialize the Markov chain, the maximum number of centers, and - of course - the number of iterations. 
 
 
 ```python
@@ -212,4 +205,60 @@ print(len(algo.centroids),'centers',end='|')
     78 centers|CPU times: user 49.9 s, sys: 408 ms, total: 50.3 s
     Wall time: 2.3 s
 
+
+## Viz with bubbles4py
+
+We want a easy way to analyze our centroids and interacts with different axes of air quality measurements such NO2, OVC, etc. bubbles4py allows to open a new tab in your browser in order to plot and analyze clusters.
+
+
+```python
+#Function to give the size of each non-empty cluster to the viz
+def count(labels,centroids):
+    counts = []
+    cpt = 0#number of empty clusters
+    K = len(centroids)
+    for k in range(K):
+        cluster_i = np.where(labels==k)
+        if len(cluster_i[0])>0:
+            counts.append(len(cluster_i[0]))
+        else:
+            counts.append(0)
+            cpt+=1
+    print('Warning:',cpt,'empty clusters')
+    return(counts)
+
+```
+
+
+```python
+#bloc to generate the url of the d3.js vizualization
+
+from bubbles.drivers import MemDriver
+from bubbles import Server
+from random import randint
+import requests
+
+
+#labels = algo.predict(dataset)#gives the label of each point of the dataset
+counts = count(labels,algo.centroids)
+
+centers = [x for k,x in enumerate(algo.centroids.tolist()) if counts[k]>0]#transform centroids numpy array into list of lists
+
+counts = [x for x in counts if x>0]
+result = {'centers': centers, 'counts': counts, 'columns': list(data.columns)}
+
+driver = MemDriver()
+server = Server(driver)
+port = randint(44001, 44999)
+server.start(timeout=10, host='luzine.lumenai.fr', port=port, quiet=True)
+
+result_id = driver.put_result(result)
+print('http://luzine.lumenai.fr:{}/bubbles?result_id={}'.format(port, result_id))
+```
+
+    Warning: 61 empty clusters
+    http://luzine.lumenai.fr:44425/bubbles?result_id=bveonfhodjlhfppszueeyxlnxlnofpoa
+
+
+    WARNING:root:timeout reached, server was terminated
 

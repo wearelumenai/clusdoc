@@ -4,7 +4,7 @@ description = "Batch and Online analysis of news"
 date = 2019-12-19T12:32:00+01:00
 weight = 10
 draft = false
-bref = "Batch analysis of Air Quality"
+bref = "Batch and Online analysis of news"
 toc = true
 +++
 
