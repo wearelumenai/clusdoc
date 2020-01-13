@@ -82,7 +82,7 @@ Will launch both platform and this documentation on your computer.
 
 ## Services
 
-### [bubbles-app](https://github.com/wearelumenai/bubbles-app)
+### [clusfront](https://github.com/wearelumenai/clusfront)
 
 User interface for analyzing and visualizing data model.
 
@@ -96,17 +96,17 @@ Our SaaS is available at https://lakelady.lumenai.fr/tasks/graphql.
 
 ### [clustore](https://github.com/wearelumenai/clustore)
 
-Bubbles-app backend with a graphql API at https://lakelady.lumenai.fr/store/playground.
+Backend with a graphql API at https://lakelady.lumenai.fr/store/playground.
 
 Our SaaS is available at https://lakelady.lumenai.fr/store/playground.
 
-### [tracking](https://github.com/wearelumenai/tracking)
+### [clustrack](https://github.com/wearelumenai/clustrack)
 
-Bubbles-app user interaction tracking service with a graphql API at https://lakelady.lumenai.fr/tracking/playground.
+User interaction tracking service with a graphql API at https://lakelady.lumenai.fr/tracking/playground.
 
 Our SaaS is available at https://lakelady.lumenai.fr/tracking/playground.
 
-### [auth](https://github.com/wearelumenai/auth)
+### [clusauth](https://github.com/wearelumenai/clusauth)
 
 Authentication service.
 

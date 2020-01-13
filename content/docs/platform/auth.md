@@ -8,7 +8,7 @@ bref = "Standardized Single Sign On solution"
 toc = false
 +++
 
-We use the golang project [vouche-proxy](https://github.com/vouch/vouch-proxy) for authenticating users with standardized OpenID & Oauth2 providers.
+We use the golang project [clusauth](https://github.com/wearelumenai/clusauth) for authenticating users with standardized OpenID & Oauth2 providers, forked from vouch-proxy.
 
 Vouch-proxy is an SSO solution for Nginx using the [auth_request](http://nginx.org/en/docs/http/ngx_http_auth_request_module.html) module.
 
