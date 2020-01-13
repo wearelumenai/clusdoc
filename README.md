@@ -1,6 +1,5 @@
-# TLOTL-Website
-
-The lady of the lake Documentation
+# clusdoc
+The lady of the lake Documentation Website contains tutorials to use unsupervised online learning algorithms based on the Golang library distclus and his python interface disclut4py. 
 
 ## Remarks
 
