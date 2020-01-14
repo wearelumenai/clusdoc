@@ -8,16 +8,4 @@ services:
     image: clusdoc
     container_name: clusdoc
     ports:
-      - "1380:80"
-  clusdoc-dev:
-    build:
-      context: ../
-      dockerfile: ./build/Dockerfile
-      target: dev
-    image: clusdoc-dev
-    container_name: clusdoc-dev
-    ports:
-      - "1313:1313"
-    volumes:
-      - "../:/app/clusdoc/"
-    command: -D
+      - "1313:80"

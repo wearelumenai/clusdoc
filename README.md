@@ -41,11 +41,15 @@ make doc-dev
 
 ### production doc without drafts
 
-Expose doc at http://localhost:1380
+Expose doc at http://localhost:1313
 
 ```bash
 make docker
+# or with specific args
+args="--build" make docker
 ```
+
+> Other commands are docker-(build|stop|down)
 
 ### hot-reload doc-generation in `public/` with drafts
 
@@ -53,6 +57,10 @@ Expose doc at http://localhost:1313
 
 ```bash
 make docker-dev
+# or with specific args
+args="--build" make docker-dev
 ```
+
+> Other commands are docker-dev-(build|stop|down)
 
 Enjoy

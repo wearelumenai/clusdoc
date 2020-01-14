@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+  clusdoc-dev:
+    build:
+      context: ../
+      dockerfile: ./build/Dockerfile
+      target: dev
+    image: clusdoc:dev
+    container_name: clusdoc-dev
+    ports:
+      - "1313:1313"
+    volumes:
+      - "../:/app/clusdoc/"
+    command: -D
