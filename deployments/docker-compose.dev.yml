@@ -12,3 +12,5 @@ services:
     volumes:
       - "../:/app/clusdoc/"
     command: -D
+    environment:
+      COMPOSE_PROJECT_NAME: clusapp

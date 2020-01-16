@@ -9,3 +9,5 @@ services:
     container_name: clusdoc
     ports:
       - "1313:80"
+    environment:
+      COMPOSE_PROJECT_NAME: clusapp
