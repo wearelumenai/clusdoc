@@ -14,5 +14,5 @@ It interacts with all other services:
 
 - [clustore](/docs/clustore)
 - [cluserve](/docs/cluserve)
-- [tracking](/docs/tracking)
-- [auth](/docs/auth)
+- [clustrack](/docs/clustrack)
+- [clusauth](/docs/clusauth)

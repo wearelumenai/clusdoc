@@ -1,23 +1,13 @@
 version: '3.7'
 services:
-  tlotl-website:
+  clusdoc:
     build:
       context: ../
       dockerfile: ./build/Dockerfile
       target: prod
-    image: tlotl-website
-    container_name: tlotl-website
+    image: clusdoc
+    container_name: clusdoc
     ports:
-      - "1380:80"
-  tlotl-website-dev:
-    build:
-      context: ../
-      dockerfile: ./build/Dockerfile
-      target: dev
-    image: tlotl-website-dev
-    container_name: tlotl-website-dev
-    ports:
-      - "1313:1313"
-    volumes:
-      - "../:/website/"
-    command: -D
+      - "1313:80"
+    environment:
+      COMPOSE_PROJECT_NAME: clusapp

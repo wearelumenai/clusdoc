@@ -11,10 +11,10 @@ toc = true
 [github]: /github-logo.png
 
 
-# Introduction <img style="float: right;" src="/tlotl.jpg" width="300">
+# Introduction <img style="float: right;" src="/clusapp.jpg" width="300">
 
 
-**The Lady of the Lake** is an enchantress in the Matter of Britain, the body of medieval literature and legend associated with King Arthur. She plays a pivotal role in many stories, including giving Arthur his sword Excalibur, enchanting Merlin, and raising Lancelot after the death of his father (Source [Wikipedia](https://en.wikipedia.org/wiki/Lady_of_the_Lake)). In what follows, **The lady of the lake** gives datascientists swords and tools to segment, cluster, visualize and analyze alive data. 
+**The Lady of the Lake** is an enchantress in the Matter of Britain, the body of medieval literature and legend associated with King Arthur. She plays a pivotal role in many stories, including giving Arthur his sword Excalibur, enchanting Merlin, and raising Lancelot after the death of his father (Source [Wikipedia](https://en.wikipedia.org/wiki/Lady_of_the_Lake)). In what follows, **The lady of the lake** gives datascientists swords and tools to segment, cluster, visualize and analyze alive data.
 
 > Wait, what ? Alive data ???
 
@@ -36,8 +36,8 @@ We propose hic et nunc three algorithms:
 
 as well as three different metrics or similarities:
 
-- euclidean to analyze vectors of features in the standard Euclidean space, 
-- cosinus to analyze vectors of features with the cosine similarity, 
+- euclidean to analyze vectors of features in the standard Euclidean space,
+- cosinus to analyze vectors of features with the cosine similarity,
 - dtw to analyze multivariate time series with the state-of-the-art Dynamic Time Warping (DTW) similarity.
 
 ## [distclus4py](https://github.com/wearelumenai/distclus4py)
@@ -64,13 +64,13 @@ This solution is based on 5 services:
 
 ## Deployment
 
-Clone the repository [tlotl](https://github.com/wearelumenai/tlotl).
+Clone the repository [clusapp](https://github.com/wearelumenai/clusapp).
 
 ```bash
-git clone https://github.com/wearelumenai/tlotl
+git clone https://github.com/wearelumenai/clusapp
 ```
 
-Then, read the [README](https://github.com/wearelumenai/tlotl/blob/master/README.md) for configuring your environment (dev, prod, distributed, etc.).
+Then, read the [README](https://github.com/wearelumenai/clusapp/blob/master/README.md) for configuring your environment (dev, prod, distributed, etc.).
 
 For example, taping
 
@@ -82,7 +82,7 @@ Will launch both platform and this documentation on your computer.
 
 ## Services
 
-### [bubbles-app](https://github.com/wearelumenai/bubbles-app)
+### [clusfront](https://github.com/wearelumenai/clusfront)
 
 User interface for analyzing and visualizing data model.
 
@@ -96,17 +96,17 @@ Our SaaS is available at https://lakelady.lumenai.fr/tasks/graphql.
 
 ### [clustore](https://github.com/wearelumenai/clustore)
 
-Bubbles-app backend with a graphql API at https://lakelady.lumenai.fr/store/playground.
+Backend with a graphql API at https://lakelady.lumenai.fr/store/playground.
 
 Our SaaS is available at https://lakelady.lumenai.fr/store/playground.
 
-### [tracking](https://github.com/wearelumenai/tracking)
+### [clustrack](https://github.com/wearelumenai/clustrack)
 
-Bubbles-app user interaction tracking service with a graphql API at https://lakelady.lumenai.fr/tracking/playground.
+User interaction tracking service with a graphql API at https://lakelady.lumenai.fr/tracking/playground.
 
 Our SaaS is available at https://lakelady.lumenai.fr/tracking/playground.
 
-### [auth](https://github.com/wearelumenai/auth)
+### [clusauth](https://github.com/wearelumenai/clusauth)
 
 Authentication service.
 
