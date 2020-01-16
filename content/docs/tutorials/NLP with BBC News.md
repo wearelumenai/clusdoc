@@ -174,7 +174,7 @@ Here we first give vectors of the trainset to our streaming algorithm. Articles 
 from distclus import Streaming
 
 #Streaming
-algo = Streaming(mu=0.45, sigma=0.1, outRatio=2, outAfter=7)
+algo = Streaming(mu=0.45, sigma=0.1, buffer_size=n_train, outRatio=2, outAfter=7)
 print('Analyzing',n_train,'articles---')
 algo.push(train_vectors[:1])
 algo.run(rasync=True)
