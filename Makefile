@@ -1,5 +1,6 @@
-DOCKER=docker-compose -p clusapp -f deployments/docker-compose.yml
-DOCKER_DEV=docker-compose -p clusapp -f deployments/docker-compose.dev.yml
+DOCK=docker-compose -p clusapp
+DOCKER=$(DOCK) -f deployments/docker-compose.yml
+DOCKER_DEV=$(DOCK) -f deployments/docker-compose.dev.yml
 
 all: build docker-build
 
