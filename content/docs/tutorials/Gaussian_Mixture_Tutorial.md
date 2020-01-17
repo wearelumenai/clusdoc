@@ -12,12 +12,12 @@ toc = true
 
 
 In this tutorial, you interact with your clustering algorithm as follows:
-<br/>
-&nbsp;&nbsp;&nbsp; 1) <a href="#batch">Batch mode</a><br/>
+
+1. <a href="#batch">Batch mode</a><br/>
 
 I give data, give me clusters
 
-&nbsp;&nbsp;&nbsp; 2) <a href="#sync">Online mode synchronous</a><br/>
+2. <a href="#sync">Online mode synchronous</a><br/>
 
 I give data
 
@@ -31,7 +31,7 @@ I give data
 
 you update the clusters
 
-&nbsp;&nbsp;&nbsp; 3) <a href="#async">Online mode asynchronous</a><br/>
+3. <a href="#async">Online mode asynchronous</a><br/>
 
 I give data
 
@@ -39,7 +39,8 @@ You create the clusters
 
 I give data from time to time, while in the background, you are continuously updating the clusters given the data you currently have...
 
-Warning: this notebook uses <em>util_gen_gaussian.py</em> to generate online Gaussian mixtures, see <a href="#utils">the end of this tutorial to get the code.</a><br/>
+WARNING: this notebook uses <em>utils_gen_gaussian.py</em> to generate online Gaussian mixtures, see the end of this tutorial to get the code.<br/>
+
 <hr style="height:2px;border-top:1.px solid #fff" />
 
 
