@@ -49,7 +49,7 @@ make docker
 args="--build" make docker
 ```
 
-> Other commands are docker-(build|stop|down)
+> Other commands are docker-(build|stop|down|logs)
 
 ### hot-reload doc-generation in `public/` with drafts
 
@@ -61,6 +61,6 @@ make docker-dev
 args="--build" make docker-dev
 ```
 
-> Other commands are docker-dev-(build|stop|down)
+> Other commands are docker-dev-(build|stop|down|logs)
 
 Enjoy
