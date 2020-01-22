@@ -1,4 +1,4 @@
-FROM gohugoio/hugo AS base
+FROM gohugoio/hugo:0.31.1 AS base
 
 FROM scratch AS dev
 
@@ -10,7 +10,7 @@ COPY ./ /app/clusdoc/
 
 ENTRYPOINT ["/hugo", "server", "--renderToDisk", "--bind", "0.0.0.0"]
 
-FROM alpine AS build
+FROM alpine:3.11.3 AS build
 
 WORKDIR /app/clusdoc
 
@@ -20,6 +20,6 @@ COPY ./ /app/clusdoc/
 
 RUN /hugo
 
-FROM nginx:alpine AS prod
+FROM nginx:1.17.8-alpine AS prod
 
 COPY --from=build /app/clusdoc/public /usr/share/nginx/html
