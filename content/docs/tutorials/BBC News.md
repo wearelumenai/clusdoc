@@ -1,6 +1,17 @@
-# NLP with BBC News - Prediction 
++++
+title = "NLP with BBC News - Prediction with Decision trees"
+description = "Online and Batch analysis of Gaussian mixtures"
+date = 2019-12-19T12:32:00+01:00
+weight = 10
+draft = false
+bref = "Make supervised algorithms"
+toc = true
++++
 
-This tutorial is about supervised learning on a BBC articles dataset. The goal is to compare the efficiency of several machine learning algorithms to classify BBC news articles into 5 different category : business, entertainment, politics, sport and tech.
+[github]: /github-logo.png
+
+
+This tutorial shows how to build supervised learning algortihms with 'distclus' on a BBC articles dataset. The goal is to compare the efficiency of several machine learning algorithms to classify BBC news articles into 5 different category : business, entertainment, politics, sport and tech.
 
 The dataset can be found at : http://mlg.ucd.ie/datasets/bbc.html
 
