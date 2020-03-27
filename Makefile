@@ -10,11 +10,11 @@ build:
 
 .PHONY: start
 start:
-	hugo server --renderToDisk ${args}
+	hugo server -p 8004 --renderToDisk ${args}
 
 .PHONY: dev
 dev:
-	hugo server --renderToDisk -D ${args}
+	hugo server -p 8004 --renderToDisk -D ${args}
 
 .PHONY: docker-cmd
 docker-cmd:
@@ -42,7 +42,11 @@ docker-logs:
 
 .PHONY: docker-restart
 docker-restart:
-	cmd=logs args=${args} make docker-cmd
+	cmd=restart args=${args} make docker-cmd
+
+.PHONY: docker-config
+docker-config:
+	cmd=config args=${args} make docker-cmd
 
 .PHONY: docker-tty
 docker-tty:
@@ -74,7 +78,11 @@ docker-dev-logs:
 
 .PHONY: docker-dev-restart
 docker-dev-restart:
-	cmd=logs args=${args} make docker-dev-cmd
+	cmd=restart args="${args}" make docker-dev-cmd
+
+.PHONY: docker-dev-config
+docker-dev-config:
+	cmd=config args=${args} make docker-dev-cmd
 
 .PHONY: docker-dev-tty
 docker-dev-tty:

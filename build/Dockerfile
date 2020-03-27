@@ -8,7 +8,7 @@ COPY --from=base /hugo /hugo
 
 COPY . .
 
-ENTRYPOINT ["/hugo", "server", "--renderToDisk", "--bind", "0.0.0.0"]
+ENTRYPOINT ["/hugo", "server", "-p", "8004", "--renderToDisk", "--bind", "0.0.0.0"]
 
 FROM alpine:3.11.3 AS build
 
