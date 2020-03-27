@@ -4,45 +4,78 @@ DOCKER_DEV=$(DOCK) -f deployments/docker-compose.dev.yml
 
 all: build docker-build
 
+.PHONY: build
 build:
 	hugo ${args}
 
-doc:
+.PHONY: start
+start:
 	hugo server --renderToDisk ${args}
 
-doc-dev:
+.PHONY: dev
+dev:
 	hugo server --renderToDisk -D ${args}
 
-docker:
-	$(DOCKER) up ${args}
+.PHONY: docker-cmd
+docker-cmd:
+	$(DOCKER) ${cmd} ${args}
 
+.PHONY: docker-up
+docker-up:
+	cmd=up args="-d ${args}" make docker-cmd
+
+.PHONY: docker-build
 docker-build:
-	$(DOCKER) build ${args}
+	cmd=build args=${args} make docker-cmd
 
+.PHONY: docker-stop
 docker-stop:
-	$(DOCKER) Stop ${args}
+	cmd=stop args=${args} make docker-cmd
 
+.PHONY: docker-down
 docker-down:
-	$(DOCKER) down ${args}
+	cmd=down args=${args} make docker-cmd
 
+.PHONY: docker-logs
 docker-logs:
-	$(DOCKER) logs ${args}
+	cmd=logs args="-f ${args}" make docker-cmd
 
-docker-dev:
-	$(DOCKER_DEV) up ${args}
+.PHONY: docker-restart
+docker-restart:
+	cmd=logs args=${args} make docker-cmd
 
+.PHONY: docker-tty
+docker-tty:
+	cmd=exec args="clusdoc /bin/sh" make docker-cmd
+
+.PHONY: docker-dev-cmd
+docker-dev-cmd:
+	$(DOCKER_DEV) ${cmd} ${args}
+
+.PHONY: docker-dev-up
+docker-dev-up:
+	cmd=up args="-d ${args}" make docker-dev-cmd
+
+.PHONY: docker-dev-build
 docker-dev-build:
-	$(DOCKER_DEV) build ${args}
+	cmd=build args=${args} make docker-dev-cmd
 
+.PHONY: docker-dev-stop
 docker-dev-stop:
-	$(DOCKER_DEV) Stop ${args}
+	cmd=stop args=${args} make docker-dev-cmd
 
+.PHONY: docker-dev-down
 docker-dev-down:
-	$(DOCKER_DEV) down ${args}
+	cmd=down args=${args} make docker-dev-cmd
 
+.PHONY: docker-dev-logs
 docker-dev-logs:
-	$(DOCKER_DEV) logs ${args}
+	cmd=logs args="-f ${args}" make docker-dev-cmd
 
-.PHONY: build doc doc-dev \
-	docker docker-build docker-stop docker-down docker-logs \
-	docker-dev docker-dev-build docker-dev-stop docker-dev-down docker-dev-logs
+.PHONY: docker-dev-restart
+docker-dev-restart:
+	cmd=logs args=${args} make docker-dev-cmd
+
+.PHONY: docker-dev-tty
+docker-dev-tty:
+	cmd=exec args="clusdoc /bin/sh" make docker-dev-cmd
