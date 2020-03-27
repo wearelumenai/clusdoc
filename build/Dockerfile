@@ -6,7 +6,7 @@ WORKDIR /app/clusdoc
 
 COPY --from=base /hugo /hugo
 
-COPY ./ /app/clusdoc/
+COPY . .
 
 ENTRYPOINT ["/hugo", "server", "--renderToDisk", "--bind", "0.0.0.0"]
 
@@ -16,7 +16,7 @@ WORKDIR /app/clusdoc
 
 COPY --from=base /hugo /hugo
 
-COPY ./ /app/clusdoc/
+COPY . .
 
 RUN /hugo
 

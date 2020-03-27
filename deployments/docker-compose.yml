@@ -2,10 +2,10 @@ version: '3.7'
 services:
   clusdoc:
     build:
-      context: ../
-      dockerfile: ./build/Dockerfile
+      context: ${CLUSDOC_CONTEXT-../}
+      dockerfile: ${CLUSDOC_DOCKERFILE-./build/Dockerfile}
       target: prod
     image: clusdoc
     container_name: clusdoc
     ports:
-      - 1313:80
+      - ${CLUSDOC_PORT-8004}:80
