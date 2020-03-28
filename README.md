@@ -13,54 +13,38 @@ Each time you commit to master, the public folder will be published in the repo 
 
 Once you choose a command, the documentation will be available at http://localhost:1313
 
-## See documentation without drafts (default)
-
-If you modify the documentation, the result will be published in the directory `public` and the webpage will be updated (hot-reload).
-
-```bash
-make doc
-```
-
 ## Build
-
-Generate files without drafts in the directory `public`
 
 ```bash
 make build
+# or for docker
+make docker-build 
 ```
 
-## Dev with drafts
+## Usage
 
-Every modification will modify the directory `public`
+Expose documentation at http://localhost:8004
+
+### Legacy
 
 ```bash
-make doc-dev
+# production mode without drafts
+make start
+# dev mode with hot-reload and drafts
+make dev
 ```
 
-## With docker
-
-### production doc without drafts
-
-Expose doc at http://localhost:8004
+### With docker
 
 ```bash
-make docker
-# or with specific args
-args="--build" make docker
+# production mode
+make docker-up
+# dev mode with hot-reload and drafts
+make docker-dev-up
+# and with additional args
+args="--build -d" make docker-up # up prod container in rebuilding image and in detached mode
 ```
 
-> Other commands are docker-(build|stop|down|logs|restart|config|tty)
-
-### hot-reload doc-generation in `public/` with drafts
-
-Expose doc at http://localhost:8004
-
-```bash
-make docker-dev
-# or with specific args
-args="--build" make docker-dev
-```
-
-> Other commands are docker-dev-(build|stop|down|logs|restart|config|tty)
+> Other commands are `docker-[dev-](build|stop|down|logs|restart|config|tty|cmd)`
 
 Enjoy

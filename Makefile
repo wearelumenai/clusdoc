@@ -16,37 +16,45 @@ start:
 dev:
 	hugo server -p 8004 --renderToDisk -D ${args}
 
+.PHONY: test
+test:
+	echo "no test"
+
+.PHONY: lint
+lint:
+	echo "no lint"
+
 .PHONY: docker-cmd
 docker-cmd:
 	$(DOCKER) ${cmd} ${args}
 
 .PHONY: docker-up
 docker-up:
-	cmd=up args="-d ${args}" make docker-cmd
+	cmd=up args="${args}" make docker-cmd
 
 .PHONY: docker-build
 docker-build:
-	cmd=build args=${args} make docker-cmd
+	cmd=build args="${args}" make docker-cmd
 
 .PHONY: docker-stop
 docker-stop:
-	cmd=stop args=${args} make docker-cmd
+	cmd=stop args="${args}" make docker-cmd
 
 .PHONY: docker-down
 docker-down:
-	cmd=down args=${args} make docker-cmd
+	cmd=down args="${args}" make docker-cmd
 
 .PHONY: docker-logs
 docker-logs:
-	cmd=logs args="-f ${args}" make docker-cmd
+	cmd=logs args="${args}" make docker-cmd
 
 .PHONY: docker-restart
 docker-restart:
-	cmd=restart args=${args} make docker-cmd
+	cmd=restart args="${args}" make docker-cmd
 
 .PHONY: docker-config
 docker-config:
-	cmd=config args=${args} make docker-cmd
+	cmd=config args="${args}" make docker-cmd
 
 .PHONY: docker-tty
 docker-tty:
@@ -58,23 +66,23 @@ docker-dev-cmd:
 
 .PHONY: docker-dev-up
 docker-dev-up:
-	cmd=up args="-d ${args}" make docker-dev-cmd
+	cmd=up args="${args}" make docker-dev-cmd
 
 .PHONY: docker-dev-build
 docker-dev-build:
-	cmd=build args=${args} make docker-dev-cmd
+	cmd=build args="${args}" make docker-dev-cmd
 
 .PHONY: docker-dev-stop
 docker-dev-stop:
-	cmd=stop args=${args} make docker-dev-cmd
+	cmd=stop args="${args}" make docker-dev-cmd
 
 .PHONY: docker-dev-down
 docker-dev-down:
-	cmd=down args=${args} make docker-dev-cmd
+	cmd=down args="${args}" make docker-dev-cmd
 
 .PHONY: docker-dev-logs
 docker-dev-logs:
-	cmd=logs args="-f ${args}" make docker-dev-cmd
+	cmd=logs args="${args}" make docker-dev-cmd
 
 .PHONY: docker-dev-restart
 docker-dev-restart:
@@ -82,7 +90,7 @@ docker-dev-restart:
 
 .PHONY: docker-dev-config
 docker-dev-config:
-	cmd=config args=${args} make docker-dev-cmd
+	cmd=config args="${args}" make docker-dev-cmd
 
 .PHONY: docker-dev-tty
 docker-dev-tty:
