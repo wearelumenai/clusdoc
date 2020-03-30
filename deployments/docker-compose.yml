@@ -9,3 +9,4 @@ services:
     container_name: clusdoc
     ports:
       - ${CLUSDOC_PORT-8004}:80
+    env_file: ${CLUSDOC_ENV-.env}

@@ -12,3 +12,4 @@ services:
     volumes:
       - ${CLUSDOC_SRC-../}:/app/clusdoc/
     command: -D
+    env_file: ${CLUSDOC_ENV-.env}
