@@ -10,6 +10,8 @@ COPY . .
 
 ENTRYPOINT ["/hugo", "server", "-p", "8004", "--renderToDisk", "--bind", "0.0.0.0"]
 
+EXPOSE 8004
+
 FROM alpine:3.11.3 AS build
 
 WORKDIR /app/clusdoc
@@ -23,3 +25,5 @@ RUN /hugo
 FROM nginx:1.17.8-alpine AS prod
 
 COPY --from=build /app/clusdoc/public /usr/share/nginx/html
+
+EXPOSE 80

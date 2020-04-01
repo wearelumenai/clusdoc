@@ -5,11 +5,9 @@ services:
       context: ${CLUSDOC_CONTEXT-../}
       dockerfile: ${CLUSDOC_DOCKERFILE-./build/Dockerfile}
       target: dev
-    image: clusdoc:dev
-    container_name: clusdoc-dev
+    image: ${CLUSDOC_IMAGE-clusdoc:dev}
+    container_name: ${CLUSDOC_CONTAINER-clusdoc-dev}
     ports:
       - ${CLUSDOC_PORT-8004}:8004
     volumes:
-      - ${CLUSDOC_SRC-../}:/app/clusdoc/
-    command: -D
-    env_file: ${CLUSDOC_ENV-.env}
+      - ${CLUSDOC_CONTEXT-../}:/app/clusdoc/
