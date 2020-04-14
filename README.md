@@ -42,7 +42,7 @@ make docker-up
 # dev mode with hot-reload and drafts
 make docker-dev-up
 # and with additional args
-args="--build -d" make docker-up # up prod container in rebuilding image and in detached mode
+ARGS="--build -d" make docker-up # up prod container in rebuilding image and in detached mode
 ```
 
 > Other commands are `docker-[dev-](build|stop|down|logs|restart|config|tty|cmd)`

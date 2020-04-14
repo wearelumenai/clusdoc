@@ -6,15 +6,15 @@ all: build docker-build
 
 .PHONY: build
 build:
-	hugo ${args}
+	hugo ${ARGS}
 
 .PHONY: start
 start:
-	hugo server -p 8004 --renderToDisk ${args}
+	hugo server -p 8004 --renderToDisk ${ARGS}
 
 .PHONY: dev
 dev:
-	hugo server -p 8004 --renderToDisk -D ${args}
+	hugo server -p 8004 --renderToDisk -D ${ARGS}
 
 .PHONY: test
 test:
@@ -26,72 +26,72 @@ lint:
 
 .PHONY: docker-cmd
 docker-cmd:
-	$(DOCKER) ${cmd} ${args}
+	$(DOCKER) ${CMD} ${ARGS}
 
 .PHONY: docker-up
 docker-up:
-	cmd=up args="${args}" make docker-cmd
+	CMD=up ARGS="${ARGS}" make docker-cmd
 
 .PHONY: docker-build
 docker-build:
-	cmd=build args="${args}" make docker-cmd
+	CMD=build ARGS="${ARGS}" make docker-cmd
 
 .PHONY: docker-stop
 docker-stop:
-	cmd=stop args="${args}" make docker-cmd
+	CMD=stop ARGS="${ARGS}" make docker-cmd
 
 .PHONY: docker-down
 docker-down:
-	cmd=down args="${args}" make docker-cmd
+	CMD=down ARGS="${ARGS}" make docker-cmd
 
 .PHONY: docker-logs
 docker-logs:
-	cmd=logs args="${args}" make docker-cmd
+	CMD=logs ARGS="${ARGS}" make docker-cmd
 
 .PHONY: docker-restart
 docker-restart:
-	cmd=restart args="${args}" make docker-cmd
+	CMD=restart ARGS="${ARGS}" make docker-cmd
 
 .PHONY: docker-config
 docker-config:
-	cmd=config args="${args}" make docker-cmd
+	CMD=config ARGS="${ARGS}" make docker-cmd
 
 .PHONY: docker-tty
 docker-tty:
-	cmd=exec args="clusdoc /bin/sh" make docker-cmd
+	CMD=exec ARGS="clusdoc /bin/sh" make docker-cmd
 
 .PHONY: docker-dev-cmd
 docker-dev-cmd:
-	$(DOCKER_DEV) ${cmd} ${args}
+	$(DOCKER_DEV) ${CMD} ${ARGS}
 
 .PHONY: docker-dev-up
 docker-dev-up:
-	cmd=up args="${args}" make docker-dev-cmd
+	CMD=up ARGS="${ARGS}" make docker-dev-cmd
 
 .PHONY: docker-dev-build
 docker-dev-build:
-	cmd=build args="${args}" make docker-dev-cmd
+	CMD=build ARGS="${ARGS}" make docker-dev-cmd
 
 .PHONY: docker-dev-stop
 docker-dev-stop:
-	cmd=stop args="${args}" make docker-dev-cmd
+	CMD=stop ARGS="${ARGS}" make docker-dev-cmd
 
 .PHONY: docker-dev-down
 docker-dev-down:
-	cmd=down args="${args}" make docker-dev-cmd
+	CMD=down ARGS="${ARGS}" make docker-dev-cmd
 
 .PHONY: docker-dev-logs
 docker-dev-logs:
-	cmd=logs args="${args}" make docker-dev-cmd
+	CMD=logs ARGS="${ARGS}" make docker-dev-cmd
 
 .PHONY: docker-dev-restart
 docker-dev-restart:
-	cmd=restart args="${args}" make docker-dev-cmd
+	CMD=restart ARGS="${ARGS}" make docker-dev-cmd
 
 .PHONY: docker-dev-config
 docker-dev-config:
-	cmd=config args="${args}" make docker-dev-cmd
+	CMD=config ARGS="${ARGS}" make docker-dev-cmd
 
 .PHONY: docker-dev-tty
 docker-dev-tty:
-	cmd=exec args="clusdoc /bin/sh" make docker-dev-cmd
+	CMD=exec ARGS="clusdoc /bin/sh" make docker-dev-cmd
