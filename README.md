@@ -11,7 +11,7 @@ You might need to install:
 
 Each time you commit to master, the public folder will be published in the repo https://github.com/wearelumenai/wearelumenai.github.io
 
-Once you choose a command, the documentation will be available at http://localhost:1313
+Once you choose a command, the documentation will be available at http://localhost:8004
 
 ## Build
 
