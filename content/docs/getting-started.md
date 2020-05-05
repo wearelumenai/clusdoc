@@ -11,7 +11,7 @@ toc = true
 [github]: /github-logo.png
 
 
-# Introduction <img style="float: right;" src="/clusapp.jpg" width="300">
+# Introduction <img style="float: right;" src="/lakelady.jpg" width="300">
 
 
 **The Lady of the Lake** is an enchantress in the Matter of Britain, the body of medieval literature and legend associated with King Arthur. She plays a pivotal role in many stories, including giving Arthur his sword Excalibur, enchanting Merlin, and raising Lancelot after the death of his father (Source [Wikipedia](https://en.wikipedia.org/wiki/Lady_of_the_Lake)). In what follows, **The lady of the lake** gives datascientists swords and tools to segment, cluster, visualize and analyze alive data.
@@ -64,13 +64,13 @@ This solution is based on 5 services:
 
 ## Deployment
 
-Clone the repository [clusapp](https://github.com/wearelumenai/clusapp).
+Clone the repository [lakelady](https://github.com/wearelumenai/lakelady).
 
 ```bash
-git clone https://github.com/wearelumenai/clusapp
+git clone https://github.com/wearelumenai/lakelady
 ```
 
-Then, read the [README](https://github.com/wearelumenai/clusapp/blob/master/README.md) for configuring your environment (dev, prod, distributed, etc.).
+Then, read the [README](https://github.com/wearelumenai/lakelady/blob/master/README.md) for configuring your environment (dev, prod, distributed, etc.).
 
 For example, taping
 

@@ -1,4 +1,4 @@
-DOCK=docker-compose -p clusapp
+DOCK=docker-compose -p lakelady
 DOCKER=$(DOCK) -f deployments/docker-compose.yml
 DOCKER_DEV=$(DOCK) -f deployments/docker-compose.dev.yml
 
