@@ -1,10 +1,10 @@
 +++
-title = "Clusfront"
-description = "User Interface"
+title = "Frontend"
+description = "UI"
 date = 2019-12-03T21:41:07+01:00
 weight = 20
 draft = false
-bref = "User Interface"
+bref = "Frontend"
 toc = true
 +++
 

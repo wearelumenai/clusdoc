@@ -2,6 +2,9 @@ baseURL = "https://wearelumenai.github.io/"
 languageCode = "en-us"
 title = "The lady of the lake"
 theme = "kube"
+googleAnalytics = ""
+relativeURLs = true
+enableEmoji = true
 
 [params]
 author = "LumenAI"

@@ -50,7 +50,7 @@ Python distclus4py server with automatic pre-processing based on business data m
 
 ## [bubbles](https://github.com/wearelumenai/bubbles)
 
-Cluster visualisation tool with [d3js](https://d3js.org/).
+Web cluster visualisation tool with [d3js](https://d3js.org/).
 
 ## [bubbles4py](https://github.com/wearelumenai/bubbles4py)
 
