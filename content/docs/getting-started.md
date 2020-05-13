@@ -60,7 +60,11 @@ Cluster visualisation tool based on **bubbles** and **distclus4py** for analyzin
 
 We provide a more human-friendly solution for expert and common users aiming to analyze and visualize data model and clusters.
 
+## Architecture
+
 This solution is based on 5 services:
+
+![Architecture](/media/platform.png)
 
 ## Deployment
 

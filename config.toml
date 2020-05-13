@@ -1,6 +1,7 @@
 baseURL = "https://wearelumenai.github.io/"
 languageCode = "en-us"
 title = "The lady of the lake"
+description = "Window to real-time machine learning"
 theme = "kube"
 googleAnalytics = ""
 relativeURLs = true

@@ -1,14 +1,17 @@
 {{ define "title"}} {{ .Site.Title}} {{end}}
+{{ define "description"}} {{ .Site.Description}} {{end}}
 {{ define "header"}} {{ partial "header" .}} {{end}}
 {{ define "main"}}
 
 <div id="main">
   <div id="hero">
     <h1>{{.Title}}</h1>
-    <p>{{.Description}}</p>
+    <img alt="The lady of the lake" src="{{ "/media/lakelady.jpg" | relURL }}" width="500"/>
+    <!--p>{{.Description}}</p-->
   </div>
   <div id="action-buttons">
-    <a class="button primary big" href="/docs/getting-started/" onclick="_gaq.push(['_trackEvent', 'lakelady', 'download']);">Getting Started</a> <a class="button outline big" href="https://github.com/wearelumenai" onclick="_gaq.push(['_trackEvent', 'lakelady', 'github']);">View on Github</a>
+    <a class="button primary big" href="/docs/getting-started/" onclick="_gaq.push(['_trackEvent', 'lakelady', 'download']);">Getting Started</a>
+    <a class="button outline big" href="https://github.com/wearelumenai" onclick="_gaq.push(['_trackEvent', 'lakelady', 'github']);">View on Github</a>
   </div>
   <div id="kube-features">
     <div class="row gutters">
@@ -33,7 +36,7 @@
           <img alt="Minimalism" height="48" src="{{ "/media/github-logo.png" | relURL }}" width="48">
         </figure>
         <h4>Hosted on Github</h4>
-        <p>Toolkit is open-source and hosted on github in order to make easier installation and contribution</p>
+        <p>Most solution are open-source and hosted on github in order to make easier installation and contribution</p>
       </div>
       <div class="col col-4 item">
         <figure>
@@ -47,7 +50,7 @@
           <img alt="Minimalism" height="48" src="{{ "/media/auth-logo.png" | relURL }}" width="48">
         </figure>
         <h4>OAuth2 & OpenID Connect</h4>
-        <p>Authenticate your users with your preferred Identity Provider.</p>
+        <p>Authenticate your users with your preferred Identity Provider</p>
     </div>
   </div>
 </div>

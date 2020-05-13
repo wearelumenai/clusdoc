@@ -14,6 +14,10 @@ It provides two type of usages:
 - [SaaS](/docs/platform/saas): full maintenaid and auto-updated solution for simpler and quicker use
 - [On premise](/docs/platform/on_premise): *"à la carte"* solution with independent services and components for improving your business, from embedded to large scale systems
 
+# Architecture
+
+![Architecture](/media/platform.png)
+
 # Concepts
 
 The platform uses three main concepts for clustering your data
