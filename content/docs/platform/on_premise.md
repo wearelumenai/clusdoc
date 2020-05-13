@@ -18,10 +18,10 @@ Improve your data analysis in real-time with up to 7 independant services
 
 Depending on your business requirements, choose:
 
-- one of our 3 dedicated business pack: `Big lady`, `IoT lady` or `Team lady` containing `Skinny lady`
+- one of our 3 dedicated business pack: `Big lady`, `IoT lady` or `Team lady` containing `Little lady`
 - only independent services you need
 
-## Skinny lady: individual use
+## Little lady: individual use
 
 Free (MIT License)
 
@@ -34,7 +34,7 @@ Free (MIT License)
 
 ## Big lady: Big-Data and large scale systems
 
-`Skinny lady` +
+`Little lady` +
 - [clustore](/docs/platform/clustore): clustering storage
 - [cluscale](/docs/platform/cluscale): distributed clustering
 
@@ -44,7 +44,7 @@ In option:
 
 ## IoT lady: Embedding and IoT
 
-`Skinny lady` +
+`Little lady` +
 
 - [cluscale](/docs/platform/cluscale): distributed clustering
 - [evclus](/docs/platform/evclus): event clustering
@@ -56,6 +56,6 @@ In option:
 
 ## Team lady: Team work
 
-`Skinny lady` + clusauth for team work
+`Little lady` + clusauth for team work
 
 Feel free to email us at contact+lakelady@lumenai.fr for trying our solution

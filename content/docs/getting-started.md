@@ -60,12 +60,6 @@ Cluster visualisation tool based on **bubbles** and **distclus4py** for analyzin
 
 We provide a more human-friendly solution for expert and common users aiming to analyze and visualize data model and clusters.
 
-## Architecture
-
-This solution is based on 5 services:
-
-![Architecture](/media/platform.png)
-
 ## Deployment
 
 Clone the repository [lakelady](https://github.com/wearelumenai/lakelady).
@@ -86,35 +80,43 @@ Will launch both platform and this documentation on your computer.
 
 ## Services
 
-### [clusfront](https://github.com/wearelumenai/clusfront)
+### [clusdoc](/docs/platform/clusdoc)
+
+This documentation
+
+### [clusfront](/docs/platform/clusfront)
 
 User interface for analyzing and visualizing data model.
 
-Our SaaS is available at https://lakelady.lumenai.fr.
+Our SaaS is available at https://lakelady.fr
 
-### [cluserve](https://github.com/wearelumenai/cluserve)
+### [cluserve](/docs/platform/cluserve)
 
 Batch/Online clustering server with graphql API and a playground.
 
-Our SaaS is available at https://lakelady.lumenai.fr/tasks/graphql.
+Our SaaS is available at https://cluserve.lakelady.fr/v1/graphql
 
-### [clustore](https://github.com/wearelumenai/clustore)
+### [clustore](/docs/platform/clustore)
 
-Backend with a graphql API at https://lakelady.lumenai.fr/store/playground.
+Backend with a graphql API.
 
-Our SaaS is available at https://lakelady.lumenai.fr/store/playground.
+Our SaaS is available at https://clustore.lakelady.fr/v1/graphql
 
-### [clustrack](https://github.com/wearelumenai/clustrack)
-
-User interaction tracking service with a graphql API at https://lakelady.lumenai.fr/tracking/playground.
-
-Our SaaS is available at https://lakelady.lumenai.fr/tracking/playground.
-
-### [clusauth](https://github.com/wearelumenai/clusauth)
+### [clusauth](/docs/platform/clusauth)
 
 Authentication service.
 
-Our SaaS is available at https://auth.lumenai.fr.
+Our SaaS is available at https://clusauth.lakelady.fr/login
+
+### [grphclus](/docs/platform/grphclus)
+
+Graph clustering service.
+
+### [evclus](/docs/platform/evclus)
+
+Event clustering.
+
+Our clustering schema builder is available at https://cluschema.lakelady.fr
 
 # What's next ?
 

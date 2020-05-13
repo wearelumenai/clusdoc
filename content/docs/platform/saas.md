@@ -8,13 +8,13 @@ bref = "Software as a Service"
 toc = true
 +++
 
-The platform is available such as a SaaS at https://dev.lakelady.fr
+The platform is available such as a SaaS at https://lakelady.fr
 
 All platform services are available at a price, depending on your needs
 
 # Usage levels
 
-1. Anonymous: as a guest, you can see content of the public organization at https://dev.lakelady.fr?org=public, execute and change parameters of tasks
+1. Anonymous: as a guest, you can see content of the public organization at https://lakelady.fr?org=public, execute and change parameters of tasks
 2. logged in user: as an identified use, you can create 5 private tasks, with datasets of at most 50MB
 3. subscriber: after subscribing to a plan of 9€/month, you can use the [pay as you go](#pay-as-you-go) plan, in the limit of datasets of 1GB
 4. accompagnied: you can hire a data-scientist to assist you in your clustering
@@ -32,7 +32,7 @@ In such a way, we prefer the solution `pay as you go` with a threshold to not ex
 
 Therefore, for every [task](/docs/platform/concepts#task) and [dataset](/docs/platform/concepts#dataset) you use, the platform provides:
 - price per month since the creation step
-- global price information page at https://dev.lakelady.fr/#/pricing
+- global price information page at https://lakelady.fr/#/pricing
 
 Here are computer resources you will pay as a `subscriber`
 
@@ -104,7 +104,7 @@ pushedData * rowSize * cost
 
 # Market place
 
-You can enrich your platform session with additional components available in the market place: https://dev.lakelady.fr/clusmarket
+You can enrich your platform session with additional components available in the market place: https://lakelady.fr/clusmarket
 
 You can command a [specific development](contact+lakelady@lumenai.fr), or contribute in sharing your own, and even sell it on our platform
 

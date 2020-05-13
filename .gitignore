@@ -2,3 +2,4 @@ public
 .env
 venv
 *.pyc
+.DS_Store

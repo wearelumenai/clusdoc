@@ -18,11 +18,11 @@ toc = true
 
 ## REST requests
 
-The SaaS is available at https://dev.lakelady.fr/cluserve
+The SaaS is available at https://lakelady.fr/cluserve
 
-- GET [/ping](https://dev.lakelady.fr/cluserve/ping): pong response if service is available
-- GET [/v1/graphql](https://dev.lakelady.fr/cluserve/v1/graphql): graphql playground
-- POST [/v1/graphql](https://dev.lakelady.fr/cluserve/v1/graphql): graphql API
+- GET [/ping](https://lakelady.fr/cluserve/ping): pong response if service is available
+- GET [/v1/graphql](https://lakelady.fr/cluserve/v1/graphql): graphql playground
+- POST [/v1/graphql](https://lakelady.fr/cluserve/v1/graphql): graphql API
 
 > Remember to add the http header `X-Clusauth-Token` if [Clusauth](/docs/platform/clusauth#token) exist in order to keep up your accesses
 

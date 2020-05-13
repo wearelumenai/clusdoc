@@ -14,7 +14,7 @@ According to [vouch-proxy](https://github.com/vouch/vouch-proxy), it uses standa
 
 > Vouch-proxy is an SSO solution for Nginx using the [auth_request](http://nginx.org/en/docs/http/ngx_http_auth_request_module.html) module.
 
-You can test clusauth at https://dev.lakelady.fr/clusauth
+You can test clusauth at https://lakelady.fr/clusauth
 
 # Functionalities
 
@@ -66,7 +66,7 @@ A resource owner is `admin` of this resource
 
 Properties
 
-- `public`: membership role for everybody. For example, on https://dev.lakelady.fr, everybody is contributor of the `organization` "*demo*"
+- `public`: membership role for everybody. For example, on https://lakelady.fr, everybody is contributor of the `organization` "*demo*"
 - `adminToken`: token for having `admin` membership role to the resource
 - `contributorToken`: token for having `contributor` membership role to the resource
 - `adminToken`: token for having `guest` membership role to the resource
