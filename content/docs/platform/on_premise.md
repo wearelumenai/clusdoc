@@ -42,7 +42,7 @@ In option:
 - [clusauth](/docs/platform/clusauth): team work
 - [grphclus](/docs/platform/grphclus): graph clustering
 
-## IoT lady: Embedding and IoT
+## Lightweight lady: Embedded and IoT
 
 `Little lady` +
 
