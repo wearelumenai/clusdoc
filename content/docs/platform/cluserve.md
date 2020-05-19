@@ -222,7 +222,7 @@ dataframe = {
 post(
     graphql_endpoint,
     json={
-        'query': 'PushData($id: uuid!, $data: [Elemt!]!) { pushData(id: $id, $dataframe: DataframeInput!) { status centroids { metadata } } }',
+        'query': 'PushData($id: String!, $dataframe: DataframeInput!) { pushData(id: $id, dataframe: $dataframe) { status centroids { metadata } } }',
         'variables': {'id': id, 'dataframe': dataframe}
     }
 )
