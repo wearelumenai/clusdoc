@@ -127,3 +127,116 @@ subscription {
     }
 }
 ```
+
+## Example with python and [requests](https://requests.readthedocs.io/en/master/)
+
+This example does not show how to do subscription
+
+### First, define your context
+
+```python
+from requests import post
+
+# SaaS endpoint by default
+cluserve_endpoint = 'https://cluserve.lakelady.fr'
+graphql_endpoint = '{}/v1/graphql'.format(cluserve_endpoint)
+
+# Construct an mcmc algorithm with three variables *color*, *weight* and *age* and specific dataset
+task = {
+    'name': 'test',
+    'variables': ['color', 'weight', 'age'],
+    'algorithm': {
+        'name': 'mcmc'
+    },
+    'dataset': {
+        # add specific dataset id if you want to retrieve clustore dataset
+        'dataframe': {
+            'chunks': [{
+                'data': [[1, 2, 3]]
+            }]
+        }
+    }
+}
+
+# run above task
+resp = post(
+    graphql_endpoint,
+    json={
+        'query': 'mutation Play($task: task!){ play(task: $task) { id } }',
+        'variables': {'task': task}
+    }
+)
+
+# raise if not 200
+resp.raise_for_status()
+
+body = resp.json()
+errors = body.get('errors')
+data = body.get('data')
+
+if errors: # raise errors
+    raise errors[0]
+
+# get id
+id = data['play']['id']
+```
+
+### Get status and centroids
+
+```python
+# get status and centroids
+resp = post(
+    graphql_endpoint,
+    json={
+        'query': 'Task(id: $id) { task(id: $id) { status centroids { chunks { data } } } }',
+        variables: {'id': id}
+    }
+)
+
+# raise if not 200
+resp.raise_for_status()
+
+body = resp.json()
+errors = body.get('errors')
+data = body.get('data')
+
+if errors: # raise errors
+    raise errors[0]
+
+# get centroids and status
+centroids = data['task']['centroids']['chunks'][0]['data']
+status = data['task']['status']
+```
+
+### Push data
+
+```python
+data = [4, 5, 6]
+
+# push data
+post(
+    graphql_endpoint,
+    json={
+        'query': 'Push($id: uuid!, $data: [Elemt!]!) { push(id: $id, data: $data) { status centroids { metadata } } }',
+        'variables': {'id': id, 'data': data}
+    }
+)
+
+# raise if not 200
+resp.raise_for_status()
+
+body = resp.json()
+errors = body.get('errors')
+data = body.get('data')
+
+if errors: # raise errors
+    raise errors[0]
+
+# get metadata and figures
+metadata = data['task']['centroids']['metadata']
+
+iterations = metadata.get('iterations')
+rho = metadata.get('rHo')
+```
+
+Enjoy !
