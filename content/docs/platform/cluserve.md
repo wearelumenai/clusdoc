@@ -160,7 +160,7 @@ task = {
 resp = post(
     graphql_endpoint,
     json={
-        'query': 'mutation Play($task: task!){ play(task: $task) { id } }',
+        'query': 'mutation Play($task: TaskInput!){ play(task: $task) { id } }',
         'variables': {'task': task}
     }
 )
@@ -173,7 +173,7 @@ errors = body.get('errors')
 data = body.get('data')
 
 if errors: # raise errors
-    raise errors[0]
+    raise Exception(errors[0]['message'])
 
 # get id
 id = data['play']['id']
@@ -186,7 +186,7 @@ id = data['play']['id']
 resp = post(
     graphql_endpoint,
     json={
-        'query': 'Task(id: $id) { task(id: $id) { status centroids { chunks { data } } } }',
+        'query': 'Task($id: String!) { task(id: $id) { status centroids { chunks { data } } } }',
         variables: {'id': id}
     }
 )
@@ -199,7 +199,7 @@ errors = body.get('errors')
 data = body.get('data')
 
 if errors: # raise errors
-    raise errors[0]
+    raise Exception(errors[0]['message'])
 
 # get centroids and status
 centroids = data['task']['centroids']['chunks'][0]['data']
@@ -210,13 +210,18 @@ status = data['task']['status']
 
 ```python
 data = [4, 5, 6]
+dataframe = {
+    'chunks': [{
+        'data': data
+    }]
+}
 
 # push data
 post(
     graphql_endpoint,
     json={
-        'query': 'Push($id: uuid!, $data: [Elemt!]!) { push(id: $id, data: $data) { status centroids { metadata } } }',
-        'variables': {'id': id, 'data': data}
+        'query': 'PushData($id: uuid!, $data: [Elemt!]!) { pushData(id: $id, $dataframe: DataframeInput!) { status centroids { metadata } } }',
+        'variables': {'id': id, 'dataframe': dataframe}
     }
 )
 
@@ -228,7 +233,7 @@ errors = body.get('errors')
 data = body.get('data')
 
 if errors: # raise errors
-    raise errors[0]
+    raise Exception(errors[0]['message'])
 
 # get metadata and figures
 metadata = data['task']['centroids']['metadata']
