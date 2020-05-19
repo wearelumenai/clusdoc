@@ -149,6 +149,7 @@ task = {
     'dataset': {
         # add specific dataset id if you want to retrieve clustore dataset
         'dataframe': {
+            'columns': ['color', 'weight', 'age'],
             'chunks': [{
                 'data': [[1, 2, 3]]
             }]
@@ -211,6 +212,7 @@ status = data['task']['status']
 ```python
 data = [4, 5, 6]
 dataframe = {
+    'columns': ['color', 'weight', 'age'],
     'chunks': [{
         'data': data
     }]
