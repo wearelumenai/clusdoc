@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: clusdoc@docker
-        uses: elgohr/Publish-Docker-Github-Action@master
+        uses: elgohr/Publish-Docker-Github-Action@v5
         with:
           name: wearelumenai/clusdoc/clusdoc
           username: ${{ secrets.DOCKER_USERNAME }}
